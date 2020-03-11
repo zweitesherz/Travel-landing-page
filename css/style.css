@@ -58,6 +58,11 @@
     margin: 0 auto;
 }
 
+    .wrapper-full {
+        max-width: 1262px;
+        margin: 0 auto;
+    }
+
     .header {
         
         position: fixed;
@@ -107,6 +112,8 @@
         background: url(../img/intro-bg.jpg) no-repeat center;
         background-size: cover;
         padding-top: 263px;
+        box-sizing: content-box;
+        padding-bottom: 223px;
 
     }
 
@@ -174,15 +181,253 @@
         background-color: #2065bf;
     }
 
-
-
-
-
-
-
-
-
 /*intro styles end*/
 
 
 
+/*benefits styles start*/
+
+    .benefits {
+    margin-bottom: 131px;
+    }
+
+    .benefits__wrapper {
+        max-width: 1262px;
+        background-color: #FFFFFF;
+        margin: 0 auto;
+        box-shadow: 0 2px 20px rgba(21, 24, 36, 0.15993);
+        position: relative;
+    }
+
+    .benefits__title {
+        background-color: #FFFFFF;
+        width: 100%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 42px;
+        padding: 93px 100px 88px 100px;
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translateY(-100%);
+        color: #102746;
+
+    }
+
+
+    .benefits__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 55px;
+        padding: 0 100px;
+
+
+
+    }
+
+    .benefits__card {
+        grid-column: span 1;
+        margin-bottom: 112px;
+
+    }
+
+
+    .benefits__card-pic {
+        margin-bottom: 37px;
+        max-width: 60px;
+    }
+
+
+    .benefits__card-thumb {
+        display: block;
+}
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .benefits__card-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+
+        margin-bottom: 26px;
+    }
+
+    .benefits__card-desc {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+
+        margin-bottom: 39px;
+}
+
+
+    .benefits__card-more {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #006DFE;
+        padding-right: 59px;
+        background: url(../img/shape.svg) no-repeat 95% center;
+        transition: .2s all;
+        margin-bottom: 111px;
+
+    }
+
+.benefits__card-more:hover, .benefits__card-more:focus {
+
+    background: url(../img/shape.svg) no-repeat right center;
+
+
+}
+
+/*benefits styles end*/
+
+/*<!--Places start-->*/
+
+    .places {
+        margin-bottom: 131px;
+    }
+
+
+    .section__title {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 42px;
+        position: relative;
+        padding-bottom: 10px ;
+}
+
+
+    .places__title {
+        margin-right: 15px;
+    }
+
+    .section__title:after {
+        display: block;
+        content: '';
+        width:253px ;
+        height: 3px;
+        position: absolute;
+        background-color:  #006DFE;
+        bottom: 0;
+        left: 0;
+
+}
+
+    .places__caption {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+
+    .places__view-all {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #006DFE;
+        text-decoration: none;
+        background: url(../img/shape.svg) no-repeat right center;
+        padding-right: 59px;
+    }
+
+    .places__view-all:hover, .places__view-all:focus {
+        opacity: 0.65;
+    }
+
+
+    .places__card {
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .places__card:after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(21, 24, 36, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+}
+
+    .places__card:hover .places__card-pic {
+        transform: scale(1.05);
+    }
+
+
+
+    .places__card-title {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 60px;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 27px;
+        left:29px;
+        z-index: 3;
+    }
+
+
+    .places__cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+    }
+
+    .places__card-size-lg {
+        grid-column: 3 span;
+    }
+
+
+    .places__card-size-sm {
+        grid-column: 2 span;
+    }
+
+
+    .places__card-pic {
+        width: 100%;
+
+        transition: .15s all;
+    }
+
+
+    .places__card-pic__size-lg {
+        height: 354px;
+        object-fit: cover;
+    }
+
+    .places__card-pic__size-sm {
+        height: 283px;
+        object-fit: cover;
+    }
+
+    .places__card-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+
+/*<!-- Places end-->*/
+
+/*<!-- Tour start-->*/
+
+
+
+
+/*<!-- Tour end-->*/
